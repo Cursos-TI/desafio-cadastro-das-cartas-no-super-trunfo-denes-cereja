@@ -1,57 +1,118 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
         
-    //Declarar Variáveis da Carta nº 01
-    char carta01_estado;
-    char carta01_codigo[3];
-    char carta01_cidade[50];
-    int carta01_populacao;
-    float carta01_area;
-    float carta01_PIB;
-    int carta01_ponto_turistico;
+    //Declarar Variáveis da Carta nº 01.
+        char carta01_estado;
+        char carta01_codigo[50];
+        char carta01_cidade[50];
+        int carta01_populacao;
+        float carta01_area;
+        float carta01_PIB;
+        int carta01_ponto_turistico;
 
-    //Declarar Variáveis da Carta nº 02
-    char carta02_estado;
-    char carta02_codigo[3];
-    char carta02_cidade[50];
-    int carta02_populacao;
-    float carta02_area;
-    float carta02_PIB;
-    int carta02_ponto_turistico;
+    //Declarar Variáveis da Carta nº 02.
+        char carta02_estado;
+        char carta02_codigo[50];
+        char carta02_cidade[50];
+        int carta02_populacao;
+        float carta02_area;
+        float carta02_PIB;
+        int carta02_ponto_turistico;
 
         
-    //Cadastro da Carta nº 01
-    printf("***Cadastrar Carta nº 01***\n");
-    printf("Digite a letra do Estado: ");
-    scanf(" %c", &carta01_estado);
-    printf("Digite o código da Cidade: ");
-    scanf("%s", &carta01_codigo);
-    printf("\n");
+    //Cadastrar os dados de entrada da Carta nº 01.
+        printf("***Cadastrar Carta nº 01***\n");//Título da operação da entrada de dados da carta 01.
+
+        printf("Digite a letra do Estado: ");//Cadastro da letra do estado da carta 01.
+        scanf(" %c", &carta01_estado);
+
+        printf("Digite o código da Cidade: ");//Cadastro do código da carta 01.
+        scanf("%s", carta01_codigo);
+
+        printf("Digite o nome da Cidade: ");//Cadastro do nome da cidade da carta 01.
+        scanf("%s", carta01_cidade);
+
+        printf("Digite a População: ");//Cadastro da População da carta 01.
+        scanf("%d", &carta01_populacao);
+
+        printf("Digite a Área km²: ");//Cadastro da Área em km² da carta 01.
+        scanf("%f", &carta01_area);
+
+        printf("Digite o PIB: ");//Cadastro do PIB da carta01.
+        scanf("%f", &carta01_PIB);
+
+        printf("Digite o número de Pontos Turísticos: ");//Cadastro do número de pontos turísticos da carta 01.
+        scanf("%d", &carta01_ponto_turistico);
+
+        printf("\n");//Quebra de linha.
     
     
-    //Exibir dados da Carta nº 01
-    printf("***Dados da Carta nº 01***\n");
-    printf("Letra do Estado: %c\n", carta01_estado);
-    printf("Código da Cidade: %s\n", carta01_codigo);
-    printf("\n");
+    //Exibir os dados de saída da Carta nº 01
+        printf("***Registros da Carta nº 01***\n");//Título da operação de saída de dados da carta 01.
 
-    //Cadastro da Carta nº 02
-    printf("***Cadastrar a Carta nº 02***\n");
-    printf("Digite a letra do Estado: ");
-    scanf(" %c", &carta02_estado);
-    printf("\n");
+        printf("Letra do Estado: %c\n", carta01_estado);//Exibir letra do estado da carta 01.
+
+        printf("Código da Cidade: %s\n", carta01_codigo);//Exibir código da cidade da carta 01.
+
+        printf("Nome da Cidade: %s\n", carta01_cidade);//Exibir nome da cidade da carta 01.
+
+        printf("População: %d\n", carta01_populacao);//Exibir população da carta 01.
+        
+        printf("Área km²: %.2f\n", carta01_area);//Exibir Área km² c/ duas casas decimais da carta 01.
+
+        printf("PIB: %.2f\n", carta01_PIB);//Exibir o PIB c/ duas casas decimais da carta 01.
+
+        printf("Número de Pontos Turísticos: %d\n", carta01_ponto_turistico);//Exibir número de pontos turísticos da carta 01.
+
+        printf("\n");//Quebra de linha.
+
+    //Cadastrar os Dados de Entrada da Carta nº 02
+        printf("***Cadastrar a Carta nº 02***\n");//Título da operação de entrada de dados da carta 02.
+
+        printf("Digite a letra do Estado: ");//Cadastrar a letra do Estado da carta 02.
+        scanf(" %c", &carta02_estado);
+
+        printf("Digite o Código da Cidade: ");//Cadastrar o código da cidade da carta 02.
+        scanf("%s", carta02_codigo);
+
+        printf("Digite o nome da Cidade: ");//Cadastrar o nome da Cidade da carta 02.
+        scanf("%s", carta02_cidade);
+
+        printf("Digite a População: ");//Cadastrar a População da carta 02.
+        scanf("%d", &carta02_populacao);
+
+        printf("Digite a Área km²: ");//Cadastrar a Área em km² da carta 02.
+        scanf("%f", &carta02_area);
+
+        printf("Digite o PIB: ");//Cadastrar o PIB da carta 02.
+        scanf("%f", &carta02_PIB);
+
+        printf("Digite o número de Pontos Turísticos: ");//Cadastrar o número de pontos turísticos da carta 02.
+        scanf("%d", &carta02_ponto_turistico);
+
+        printf("\n");//Quebra de linha.
 
 
-    //Exibir Dados da Carta nº 02
-    printf("***Dados da Carta nº 02***\n");
-    printf("Letra do Estado: %c\n", carta02_estado);
+    //Exibir os Dados de Saída da Carta nº 02
+        printf("***Registros da Carta nº 02***\n");//Título da operação da saída de dados da carta 02.
+
+        printf("Letra do Estado: %c\n", carta02_estado);//Exibir a letra do Estado da carta 02.
+
+        printf("Código da Cidade: %s\n", carta02_codigo);//Exibir o código da cidade da carta 02.
+
+        printf("Nome da Cidade: %s\n", carta02_cidade);//Exibir o nome da cidade da carta 02.
+
+        printf("População: %d\n", carta02_populacao);//Exibir a população da carta 02.
+
+        printf("Área km²: %.2f\n", carta02_area);//Exibir a Área em km² c/ duas casas decimais da carta 02.
+
+        printf("PIB: %.2f\n", carta02_PIB);//Exibir o PIB c/ duas casas decimais da carta 02.
+
+        printf("Número de Pontos Turísticos: %d\n", carta02_ponto_turistico);//Exibir o número dos pontos turísticos da carta 02.
+
+        printf("\n");//Quebra de linha;
       
 
     return 0;
